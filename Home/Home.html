@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Home</h2>
+            </div>
+            <div class="sidebar-nav">
+                <a href="../Home/Home.html" class="menu-btn active">
+                    <span>🏠</span> Home
+                </a>
+                <a href="../Projects/Projects.html" class="menu-btn">
+                    <span>📂</span> Projects
+                </a>
+                <a href="../Tasks/Tasks.html" class="menu-btn">
+                    <span>✅</span> Tasks
+                </a>
+                <a href="../Chat/Chat.html" class="menu-btn">
+                    <span>💬</span> Chat
+                </a>
+            </div>
+            <div class="sidebar-footer">
+                <a href="../Signin/Signin.html" class="menu-btn logout">
+                    <span>🚪</span> Logout
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header>
+                <h1>Welcome to the Task Management System</h1>
+                <p id="datetime"></p>
+            </header>
+
+            <!-- Statistics Cards -->
+            <div class="stats">
+                <div class="card">
+                    <p>Number of Projects</p>
+                    <span id="projectsCount">0</span>
+                </div>
+                <div class="card">
+                    <p>Number of Students</p>
+                    <span id="studentsCount">0</span>
+                </div>
+                <div class="card">
+                    <p>Number of Tasks</p>
+                    <span id="tasksCount">0</span>
+                </div>
+                <div class="card">
+                    <p>Number of Finished Projects</p>
+                    <span id="finishedProjectsCount">0</span>
+                </div>
+            </div>
+
+            <!-- Chart Section -->
+            <div class="chart-container">
+                <canvas id="dashboardChart"></canvas>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

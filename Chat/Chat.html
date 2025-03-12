@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats Page</title>
+    <link rel="stylesheet" href="Chat.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Chats</h2>
+            <ul class="user-list" id="userList">
+                <!-- Users will be dynamically added here -->
+            </ul>
+            <div class="sidebar-nav">
+                <a href="../Home/Home.html" class="menu-btn">
+                    <span>🏠</span> Home
+                </a>
+                <a href="../Projects/Projects.html" class="menu-btn">
+                    <span>📂</span> Projects
+                </a>
+                <a href="../Tasks/Tasks.html" class="menu-btn">
+                    <span>✅</span> Tasks
+                </a>
+                <a href="../Chat/Chat.html" class="menu-btn active">
+                    <span>💬</span> Chat
+                </a>
+            </div>
+            <div class="sidebar-footer">
+                <a href="../Signin/Signin.html" class="menu-btn logout">
+                    <span>🚪</span> Logout
+                </a>
+            </div>
+        </div>
+
+        <div class="chat-window">
+            <div class="chat-header">
+                <h3 id="chatHeader">Select a user to start chatting</h3>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will be dynamically added here -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Type your message...">
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="Chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks Page</title>
+    <link rel="stylesheet" href="Tasks.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Tasks</h2>
+            </div>
+            <div class="sidebar-nav">
+                <a href="../Home/Home.html" class="menu-btn">
+                    <span>🏠</span> Home
+                </a>
+                <a href="../Projects/Projects.html" class="menu-btn">
+                    <span>📂</span> Projects
+                </a>
+                <a href="../Tasks/Tasks.html" class="menu-btn active">
+                    <span>✅</span> Tasks
+                </a>
+                <a href="../Chat/Chat.html" class="menu-btn">
+                    <span>💬</span> Chat
+                </a>
+            </div>
+            <div class="sidebar-footer">
+                <a href="../Signin/Signin.html" class="menu-btn logout">
+                    <span>🚪</span> Logout
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h2>Tasks Overview</h2>
+                <div class="header-actions">
+                    <select id="sort-by" class="filter-dropdown">
+                        <option value="Task ID">Task ID</option>
+                        <option value="Due Date">Due Date</option>
+                        <option value="Status">Status</option>
+                    </select>
+                    <select id="filter-status" class="filter-dropdown">
+                        <option value="All">All Statuses</option>
+                        <option value="In Progress">In Progress</option>
+                        <option value="Completed">Completed</option>
+                        <option value="Pending">Pending</option>
+                    </select>
+                    <!-- Add the "Create a New Task" button -->
+                    <button id="create-task-btn" class="btn create-task">Create a New Task</button>
+                </div>
+            </header>
+
+            <!-- Tasks Grid -->
+            <div id="tasks-grid">
+                <!-- Tasks will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="Tasks.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1e1e1e; /* Dark container background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue heading */
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #e0e0e0; /* Light text */
+    }
+
+    .form-group input[type="text"],
+    .form-group textarea,
+    .form-group select,
+    .form-group input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #444; /* Darker border */
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+        background-color: #333; /* Dark input background */
+        color: #e0e0e0; /* Light text */
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        height: 100px;
+    }
+
+/* Students List */
+.students-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+    .students-list label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #e0e0e0; /* Light text */
+    }
+
+    .students-list input[type="checkbox"] {
+        accent-color: #007bff; /* Blue checkbox */
+    }
+
+/* Add Project Button */
+#add-project-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    #add-project-btn:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
