@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Project</title>
+    <link rel="stylesheet" href="AddProject.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add New Project</h1>
+
+        <!-- Project Title -->
+        <div class="form-group">
+            <label for="project-title">Project Title:</label>
+            <input type="text" id="project-title" placeholder="Enter project title">
+        </div>
+
+        <!-- Project Description -->
+        <div class="form-group">
+            <label for="project-description">Project Description:</label>
+            <textarea id="project-description" placeholder="Enter project description"></textarea>
+        </div>
+
+        <!-- Students List -->
+        <div class="form-group">
+            <label>Students List:</label>
+            <div class="students-list">
+                <label><input type="checkbox" name="students" value="Student 1"> Student 1</label>
+                <label><input type="checkbox" name="students" value="Student 2"> Student 2</label>
+                <label><input type="checkbox" name="students" value="Student 3"> Student 3</label>
+                <label><input type="checkbox" name="students" value="Student 4"> Student 4</label>
+                <label><input type="checkbox" name="students" value="Student 5"> Student 5</label>
+            </div>
+        </div>
+
+        <!-- Project Category -->
+        <div class="form-group">
+            <label for="project-category">Project Category:</label>
+            <select id="project-category">
+                <option value="">Select a category</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Mobile Development">Mobile Development</option>
+                <option value="Machine Learning">Machine Learning</option>
+            </select>
+        </div>
+
+        <!-- Starting Date -->
+        <div class="form-group">
+            <label for="start-date">Starting Date:</label>
+            <input type="date" id="start-date">
+        </div>
+
+        <!-- Ending Date -->
+        <div class="form-group">
+            <label for="end-date">Ending Date:</label>
+            <input type="date" id="end-date">
+        </div>
+
+        <!-- Project Status -->
+        <div class="form-group">
+            <label for="project-status">Project Status:</label>
+            <select id="project-status">
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+                <option value="Pending">Pending</option>
+            </select>
+        </div>
+
+        <!-- Add Project Button -->
+        <button id="add-project-btn">Add Project</button>
+    </div>
+
+    <script src="AddProject.js"></script>
+</body>
+</html>

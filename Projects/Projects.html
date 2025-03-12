@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Overview</title>
+    <link rel="stylesheet" href="Projects.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Projects</h2>
+            </div>
+            <div class="sidebar-nav">
+                <a href="../Home/Home.html" class="menu-btn">
+                    <span>🏠</span> Home
+                </a>
+                <a href="../Projects/Projects.html" class="menu-btn active">
+                    <span>📂</span> Projects
+                </a>
+                <a href="../Tasks/Tasks.html" class="menu-btn">
+                    <span>✅</span> Tasks
+                </a>
+                <a href="../Chat/Chat.html" class="menu-btn">
+                    <span>💬</span> Chat
+                </a>
+            </div>
+            <div class="sidebar-footer">
+                <a href="../Signin/Signin.html" class="menu-btn logout">
+                    <span>🚪</span> Logout
+                </a>
+            </div>
+        </aside>
+
+        <!-- Details Panel -->
+        <aside class="details-panel" id="details-panel">
+            <div class="details-header">
+                <h2>Project Details</h2>
+                <button id="close-details" class="btn close-btn">×</button>
+            </div>
+            <div class="details-content">
+                <h3 id="project-title"></h3>
+                <p><strong>Description:</strong> <span id="project-description"></span></p>
+                <p><strong>Students:</strong> <span id="project-students"></span></p>
+                <p><strong>Category:</strong> <span id="project-category"></span></p>
+                <p><strong>Progress:</strong> <span id="project-progress"></span></p>
+                <div class="tasks-section">
+                    <h4>Tasks</h4>
+                    <ul id="project-tasks"></ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h2>Projects Overview</h2>
+                <div class="header-actions">
+                    <input type="text" id="search-bar" placeholder="Search projects by title or description..." class="search-bar">
+                    <button class="btn add-project">Add New Project</button>
+                    <select id="filter-select" class="filter-dropdown">
+                        <option value="All">All Categories</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Mobile Development">Mobile Development</option>
+                        <option value="Machine Learning">Machine Learning</option>
+                    </select>
+                </div>
+            </header>
+
+            <!-- Projects Grid -->
+            <div id="projects-container" class="projects-grid">
+                <!-- Projects will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="Projects.js"></script>
+    </
